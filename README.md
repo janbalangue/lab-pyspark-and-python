@@ -30,6 +30,15 @@ The data comes from the [UCI Machine Learning Repository](https://archive.ics.uc
 | 9 | Mean ratio of `radius_mean` to `perimeter_mean` for malignant cases | 0.15 |
 | 10 | Stop the Spark session and confirm it is closed | `yes` |
 
+The grading rubric also asks for a few things that the step instructions don't. Each one is in an extra cell (with no CodeGrade tag) right after the matching step:
+
+| After step | Rubric item | Result |
+| --- | --- | --- |
+| 3 | Perimeter mean of the 77th row (`perimeter_mean_value`) | 87.91 |
+| 5 | Difference of the counts as B − M (`b_minus_m`) | 357 − 212 = 145 |
+| 7 | The same max and min, computed with `max` and `min` from `pyspark.sql.functions` | Matches pandas (0.0086) |
+| 8 | Sum of the benign standard deviations of `radius_mean`, `texture_mean` and `perimeter_mean` (`std_sum_b`) | 1.78 + 4.00 + 11.81 = 17.59 |
+
 ## Running the notebook
 
 Requirements:
